@@ -1,10 +1,16 @@
 <% if @name %>
 <h1>My name is <%= @name %></h1>
 <% end %>
+
+<% if @emotion %>
+<h1>...and I'm <%= @emotion %></h1>
+<% end %>
+
 <form action="/named-cat">
   <input type="text" name="name">
   <input type="submit" value="Submit">
 </form>
-<div style='border: 3px dashed red'>
+
+<div style='border: 10px dotted purple'>
   <img src='http://bit.ly/1eze8aE'>
 </div>
